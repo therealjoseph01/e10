@@ -106,8 +106,10 @@ export default function App() {
         <Phone />
         <HowItWorks />
         <Finale />
-        <Chrome />
       </div>
+      {/* Outside the overlay on purpose: its difference blend has to see the canvas to stay legible on light and dark scenes. */}
+      <Chrome />
+
       <div className={`loader ${state === 'ready' ? 'done' : ''}`} role="status" aria-live="polite">
         <span className="loader-mark" style={{ WebkitMaskImage: `url(${ASSETS.wordmark})`, maskImage: `url(${ASSETS.wordmark})` }} />
         <span className="loader-bar">
