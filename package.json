@@ -1,0 +1,28 @@
+{
+  "name": "e1o-point-of-view",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "E1O: a scroll-driven first-person product film. Look at the camera-free glasses, put them on, live one day through them, take them off.",
+  "engines": { "node": ">=20.19" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:single": "vite build --mode single",
+    "preview": "vite preview",
+    "assets": "node scripts/fetch-assets.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter-tight": "^5.2.5",
+    "@fontsource/instrument-serif": "^5.2.5",
+    "lenis": "^1.3.26",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.1",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}
