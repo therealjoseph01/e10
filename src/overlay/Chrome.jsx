@@ -45,7 +45,10 @@ export default function Chrome() {
           <span style={{ WebkitMaskImage: `url(${ASSETS.wordmark})`, maskImage: `url(${ASSETS.wordmark})` }} />
         </a>
         <a className="early" href={LINKS.waitlist}>
-          Early access <span aria-hidden="true">↗</span>
+          Early access
+          <svg className="arrow" viewBox="0 0 12 12" width="11" height="11" aria-hidden="true" focusable="false">
+            <path d="M3 9 9 3M4.25 3H9v4.75" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="square" />
+          </svg>
         </a>
       </header>
       <nav className={`chapters ${open ? 'open' : ''}`} aria-label="Moments">

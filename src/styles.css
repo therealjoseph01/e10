@@ -201,18 +201,22 @@ a {
   height: 26px;
 }
 .early {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.01em;
   text-decoration: none;
   padding: 8px 0 8px 12px;
 }
-.early span {
-  display: inline-block;
-  margin-left: 4px;
+.early .arrow {
+  display: block;
+  flex: none;
   transition: transform 0.25s ease;
 }
-.early:hover span {
+.early:hover .arrow,
+.early:focus-visible .arrow {
   transform: translate(2px, -2px);
 }
 
